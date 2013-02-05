@@ -56,17 +56,6 @@
       "initialSize" : 872,
       "fileType" : 8192
     },
-    "\/chosen.proto.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/chosen.proto.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/chosen.proto.min-ck.js",
-      "fileType" : 64
-    },
     "\/chosen-sprite.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -77,6 +66,17 @@
       "outputAbbreviatedPath" : "\/chosen-sprite.png",
       "initialSize" : 646,
       "fileType" : 8192
+    },
+    "\/chosen.proto.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/chosen.proto.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/chosen.proto.min-ck.js",
+      "fileType" : 64
     },
     "\/chosen.proto.js" : {
       "ignoreWasSetByUser" : 1,
