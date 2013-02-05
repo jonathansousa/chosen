@@ -1,7 +1,7 @@
 /* Variables */
 /* Functions */
 /* Shared Classes */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000326}}
 .chzn-container-multi .chzn-choices .search-choice, .chzn-container-multi .chzn-choices .search-choice.search-choice-disabled {
   background-color: #e3e3e3;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='whitesmoke', endColorstr='#ededed', GradientType=0 );
@@ -12,15 +12,16 @@
   background-image: linear-gradient(whitesmoke 20%, #f0f0f0 50%, #e8e8e8 52%, #ededed 100%); }
 
 /* @group Base */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000338}}
 .chzn-container {
   font-size: 13px;
+  width: 350px !important;
   position: relative;
   display: inline-block;
   zoom: 1;
   *display: inline;
   /* @group Results */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000345}}
   .chzn-container .chzn-drop {
     background: white;
     border: 0.07692em solid #ababab;
@@ -32,7 +33,7 @@
     -moz-box-shadow: 0 0.30769em 0.38462em rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.30769em 0.38462em rgba(0, 0, 0, 0.15);
     z-index: 1010; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000356}}
   .chzn-container .chzn-results {
     margin: 0 0.30769em 0.30769em 0;
     max-height: 18.46154em;
@@ -41,18 +42,18 @@
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000364}}
     .chzn-container .chzn-results li {
       display: none;
       line-height: 1.15385em;
       padding: 0.38462em 0.46154em;
       margin: 0;
       list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000371}}
     .chzn-container .chzn-results .active-result {
       cursor: pointer;
       display: list-item; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000375}}
     .chzn-container .chzn-results .highlighted {
       background-color: #3875d7;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3875d7', endColorstr='#2b61d4', GradientType=0 );
@@ -62,26 +63,26 @@
       background-image: -o-linear-gradient(top, #3875d7 20%, #2b61d4 90%);
       background-image: linear-gradient(#3875d7 20%, #2b61d4 90%);
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000385}}
     .chzn-container .chzn-results li em {
       background: #feffde;
       font-style: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000389}}
     .chzn-container .chzn-results .highlighted em {
       background: transparent; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000392}}
     .chzn-container .chzn-results .no-results {
       background: whitesmoke;
       display: list-item; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000396}}
     .chzn-container .chzn-results .group-result {
       cursor: default;
       color: #999999;
       font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003101}}
     .chzn-container .chzn-results .group-option {
       padding-left: 1.15385em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003105}}
   .chzn-container .chzn-results-scroll {
     background: white;
     margin: 0 0.30769em;
@@ -90,25 +91,29 @@
     width: 24.69231em;
     /* This should by dynamic with js */
     z-index: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003112}}
     .chzn-container .chzn-results-scroll span {
       display: inline-block;
       height: 1.30769em;
       text-indent: -384.61538em;
       width: 0.69231em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003119}}
   .chzn-container .chzn-results-scroll-down {
     bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003121}}
     .chzn-container .chzn-results-scroll-down span {
       background: url("chosen-sprite.png") no-repeat -4px -3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003125}}
   .chzn-container .chzn-results-scroll-up span {
     background: url("chosen-sprite.png") no-repeat -22px -3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003129}}
+.chzn-select {
+  width: 350px !important; }
+
 /* @end */
 /* @group Single Chosen */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003136}}
 .chzn-container-single .chzn-single {
   background-color: white;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#ededed', GradientType=0 );
@@ -128,11 +133,11 @@
   white-space: nowrap;
   position: relative;
   height: 1.76923em;
-  line-height: 1.84615em;
-  padding: 0 0 0 0.61538em;
+  line-height: 2em;
+  padding: 0em 0em 0em 0.61538em;
   color: #454545;
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003157}}
   .chzn-container-single .chzn-single span {
     margin-right: 2em;
     display: block;
@@ -140,7 +145,7 @@
     white-space: nowrap;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003165}}
   .chzn-container-single .chzn-single abbr {
     display: block;
     position: absolute;
@@ -150,10 +155,10 @@
     height: 0.92308em;
     font-size: 0.07692em;
     background: url("chosen-sprite.png") -42px 1px no-repeat; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003174}}
     .chzn-container-single .chzn-single abbr:hover {
       background-position: -42px -10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003178}}
   .chzn-container-single .chzn-single div {
     position: absolute;
     right: 0;
@@ -161,26 +166,26 @@
     display: block;
     height: 100%;
     width: 1.38462em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003185}}
     .chzn-container-single .chzn-single div b {
       background: url("chosen-sprite.png") no-repeat 0px 2px;
       display: block;
       width: 100%;
       height: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003193}}
 .chzn-container-single .chzn-default {
   color: #999999; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003196}}
 .chzn-container-single .chzn-container-single.chzn-disabled .chzn-single abbr:hover {
   background-position: -42px -10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003199}}
 .chzn-container-single .chzn-search {
   padding: 0.23077em 0.30769em;
   position: relative;
   margin: 0;
   white-space: nowrap;
   z-index: 1010; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003206}}
 .chzn-container-single .chzn-search input {
   background: white url("chosen-sprite.png") no-repeat 100% -20px;
   background: url("chosen-sprite.png") no-repeat 100% -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #ededed), color-stop(15%, white));
@@ -194,28 +199,28 @@
   border: 0.07692em solid #ababab;
   font-family: sans-serif;
   font-size: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003220}}
 .chzn-container-single .chzn-drop {
   border-radius: 0 0 0.30769em 0.30769em;
   background-clip: padding-box; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003225}}
 .chzn-container-single.chzn-rtl .chzn-single div b {
   background-position: 6px 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003228}}
 .chzn-container-single.chzn-rtl .chzn-single-with-drop div b {
   background-position: -12px 2px; }
 
 /* @end */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003235}}
 .chzn-container-single-nosearch .chzn-search input {
   position: absolute;
   left: -692.30769em; }
 
 /* @group Multi Chosen */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003241}}
 .chzn-container-multi {
   /* Results */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003242}}
   .chzn-container-multi .chzn-choices {
     background-color: white;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #ededed), color-stop(15%, white));
@@ -231,16 +236,16 @@
     height: auto !important;
     height: 1%;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003257}}
     .chzn-container-multi .chzn-choices li {
       float: left;
       list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003261}}
     .chzn-container-multi .chzn-choices .search-field {
       white-space: nowrap;
       margin: 0;
       padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003265}}
       .chzn-container-multi .chzn-choices .search-field input {
         color: #666666;
         background: transparent !important;
@@ -254,10 +259,10 @@
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003277}}
       .chzn-container-multi .chzn-choices .search-field .default {
         color: #999999; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003281}}
     .chzn-container-multi .chzn-choices .search-choice {
       border-radius: 0.23077em;
       background-clip: padding-box;
@@ -271,12 +276,12 @@
       margin: 0.23077em 0 0.23077em 0.38462em;
       position: relative;
       cursor: default; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003293}}
       .chzn-container-multi .chzn-choices .search-choice.search-choice-disabled {
         color: #666666;
         border: 0.07692em solid #cccccc;
         padding-right: 0.38462em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003299}}
       .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
         display: block;
         position: absolute;
@@ -286,32 +291,32 @@
         height: 12px;
         font-size: 1px;
         background: url("chosen-sprite.png") -42px 1px no-repeat; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003300}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003308}}
         .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
           background-position: -42px -10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003313}}
     .chzn-container-multi .chzn-choices .search-choice-focus {
       background: #d4d4d4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003315}}
       .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
         background-position: -42px -10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003321}}
   .chzn-container-multi .chzn-results {
     margin: -0.07692em 0 0;
     padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003325}}
   .chzn-container-multi .chzn-drop .result-selected {
     display: none; }
 
 /* @end */
 /* @group Active  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003334}}
 .chzn-container-active .chzn-single {
   -webkit-box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
   border: 0.07692em solid #5589de; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003337}}
   .chzn-container-active .chzn-single .chzn-single-with-drop {
     border: 0.07692em solid #ababab;
     -webkit-box-shadow: 0 0.07692em 0 white inset;
@@ -326,79 +331,79 @@
     background-image: linear-gradient(#ededed 20%, white 80%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003349}}
     .chzn-container-active .chzn-single .chzn-single-with-drop div {
       background: transparent;
       border-left: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003352}}
       .chzn-container-active .chzn-single .chzn-single-with-drop div b {
         background-position: -18px 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003357}}
   .chzn-container-active .chzn-single .chzn-choices {
     -webkit-box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0.38462em rgba(0, 0, 0, 0.3);
     border: 0.07692em solid #5589de; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003361}}
   .chzn-container-active .chzn-single .chzn-choices .search-field input {
     color: #121212 !important; }
 
 /* @end */
 /* @group Disabled Support */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003368}}
 .chzn-disabled {
   opacity: 0.5 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003370}}
   .chzn-disabled, .chzn-disabled .chzn-single, .chzn-disabled .chzn-choices .search-choice .search-choice-close {
     cursor: default; }
 
 /* @group Right to Left */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003376}}
 .chzn-rtl {
   text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003378}}
   .chzn-rtl .chzn-single {
     padding: 0 0.61538em 0 0;
     overflow: visible; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003381}}
     .chzn-rtl .chzn-single span {
       margin-left: 2em;
       margin-right: 0;
       direction: rtl; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003386}}
     .chzn-rtl .chzn-single div {
       left: 0.23077em;
       right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003390}}
     .chzn-rtl .chzn-single abbr {
       left: 2em;
       right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003396}}
   .chzn-rtl .chzn-choices .search-field input {
     direction: rtl; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003399}}
   .chzn-rtl .chzn-choices li {
     float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003402}}
   .chzn-rtl .chzn-choices .search-choice {
     padding: 0.23077em 0.38462em 0.23077em 1.46154em;
     margin: 0.23077em 0.38462em 0.23077em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003405}}
     .chzn-rtl .chzn-choices .search-choice .search-choice-close {
       left: 4px;
       right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003411}}
   .chzn-rtl.chzn-container-single .chzn-results {
     margin: 0 0 0.30769em 0.30769em;
     padding: 0 0.30769em 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003407}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003415}}
   .chzn-rtl .chzn-results .group-option {
     padding-left: 0;
     padding-right: 1.15385em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003411}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003419}}
   .chzn-rtl.chzn-container-active .chzn-single-with-drop div {
     border-right: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003422}}
   .chzn-rtl .chzn-search input {
     background: white url("chosen-sprite.png") no-repeat -30px -20px;
     background: url("chosen-sprite.png") no-repeat -30px -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #ededed), color-stop(15%, white));
@@ -412,7 +417,7 @@
 /* @end */
 /* @group Retina compatibility */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Sites\/chosen\/chosen\/chosen\.scss}line{font-family:\00003437}}
   .chzn-rtl .chzn-search input, .chzn-container-single .chzn-single abbr, .chzn-container-single .chzn-single div b, .chzn-container-single .chzn-search input, .chzn-container-multi .chzn-choices .search-choice .search-choice-close, .chzn-container .chzn-results-scroll-down span, .chzn-container .chzn-results-scroll-up span {
     background-image: url("chosen-sprite@2x.png") !important;
     background-repeat: no-repeat !important;

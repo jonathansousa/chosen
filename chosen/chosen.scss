@@ -1,7 +1,11 @@
 /* Variables */
 $font-size:13px;
+$width:350px;
+$padding:0px;
 $bk_color:#ffffff;
 $hl_color:#3875d7;
+
+
 
 /* Functions */
 @function calc-em($target-px, $context:$font-size) {
@@ -33,6 +37,7 @@ $hl_color:#3875d7;
 /* @group Base */
 .chzn-container {
   font-size: $font-size;
+  width:$width !important;
   position: relative;
   display: inline-block;
   zoom: 1;
@@ -121,6 +126,9 @@ $hl_color:#3875d7;
     background: url('chosen-sprite.png') no-repeat -22px -3px;
   }
 }
+.chzn-select {
+  width:$width !important;
+}
 /* @end */
 
 /* @group Single Chosen */
@@ -141,9 +149,9 @@ $hl_color:#3875d7;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    height: calc-em(23px);
-    line-height: calc-em(24px);
-    padding: 0 0 0 calc-em(8px);
+    height: calc-em(23px + $padding);
+    line-height: calc-em($font_size * 2);
+    padding: calc-em($padding) calc-em($padding) calc-em($padding) calc-em($padding + 8px);
     color: darken($bk_color, 73);
     text-decoration: none;
     span {
