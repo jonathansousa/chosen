@@ -1,6 +1,7 @@
 /* Variables */
 $font-size:13px;
 $bk_color:#ffffff;
+$hl_color:#3875d7;
 
 /* Functions */
 @function calc-em($target-px, $context:$font-size) {
@@ -67,13 +68,13 @@ $bk_color:#ffffff;
       display: list-item;
     }
     .highlighted {
-      background-color: #3875d7;
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3875d7', endColorstr='#2a62bc', GradientType=0 );
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
-      background-image: -webkit-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
-      background-image: -moz-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
-      background-image: -o-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
-      background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+      background-color: $hl_color;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$hl_color}', endColorstr='#{adjust_hue(saturate(darken($hl_color, 3), 0), 4)}', GradientType=0 );
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, $hl_color), color-stop(90%, adjust_hue(saturate(darken($hl_color, 3), 0), 4)));
+      background-image: -webkit-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
+      background-image: -moz-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
+      background-image: -o-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
+      background-image: linear-gradient($hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
       color: $bk_color;
     }
     li em {
@@ -324,7 +325,7 @@ $bk_color:#ffffff;
 /* @group Active  */
 .chzn-container-active .chzn-single {
   @include shadow(0 0 calc-em(5px) rgba(0,0,0,.3));
-  border: calc-em(1px) solid #5897fb;
+  border: calc-em(1px) solid saturate(lighten($hl_color, 7), 1);
   .chzn-single-with-drop {
     border: calc-em(1px) solid darken($bk_color, 33);
     @include shadow(0 calc-em(1px) 0 $bk_color inset);
@@ -347,7 +348,7 @@ $bk_color:#ffffff;
   }
   .chzn-choices {
     @include shadow(0 0 calc-em(5px) rgba(0,0,0,.3));
-    border: calc-em(1px) solid #5897fb;
+    border: calc-em(1px) solid saturate(lighten($hl_color, 7), 1);
   }
   .chzn-choices .search-field input {
     color: darken($bk_color, 93) !important;
