@@ -1,5 +1,6 @@
 /* Variables */
 $font-size:13px;
+$bk_color:#ffffff;
 
 /* Functions */
 @function calc-em($target-px, $context:$font-size) {
@@ -16,24 +17,16 @@ $font-size:13px;
     box-shadow: $specs;
   }
 }
-@mixin gradient($color1, $color2, $svg:"none", $primary:"1") { /* FIX THIS  */
-    @if $primary == "1" {
-        background-color: $color1;
-    } @else {
-        background-color: $color2;
-    }
-    @if $svg != "none" {
-        background: url(data:image/svg+xml;base64,#{$svg});
-    }
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}', GradientType=0 );
-    background-image: -moz-linear-gradient(top,  $color1 0%, $color2 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2));
-    background-image: -webkit-linear-gradient(top, $color1 0%,$color2 100%);
-    background-image: -o-linear-gradient(top, $color1 0%,$color2 100%);
-    background-image: -ms-linear-gradient(top, $color1 0%,$color2 100%);
-    background-image: linear-gradient(to bottom, $color1 0%,$color2 100%);
+/* Shared Classes */
+%grad_grey {
+  background-color:darken($bk_color, 11);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{darken($bk_color, 4)}', endColorstr='#{darken($bk_color, 7)}', GradientType=0 );
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, darken($bk_color, 4)), color-stop(50%, darken($bk_color, 6)), color-stop(52%, darken($bk_color, 9)), color-stop(100%, darken($bk_color, 7)));
+  background-image: -webkit-linear-gradient(top, darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
+  background-image: -moz-linear-gradient(top, darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
+  background-image: -o-linear-gradient(top, darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
+  background-image: linear-gradient(darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
 }
-
 
 
 /* @group Base */
@@ -44,8 +37,8 @@ $font-size:13px;
   zoom: 1;
   *display: inline;
   .chzn-drop {
-    background: #fff;
-    border: calc-em(1px) solid #aaa;
+    background: $bk_color;
+    border: calc-em(1px) solid darken($bk_color, 33);
     border-top: 0;
     position: absolute;
     top: calc-em(29px);
@@ -74,8 +67,14 @@ $font-size:13px;
       display: list-item;
     }
     .highlighted {
-      @include gradient('#3875d7', '#2a62bc');
-      color: #fff;
+      background-color: #3875d7;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3875d7', endColorstr='#2a62bc', GradientType=0 );
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+      background-image: -webkit-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+      background-image: -moz-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+      background-image: -o-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+      background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+      color: $bk_color;
     }
     li em {
       background: #feffde;
@@ -85,12 +84,12 @@ $font-size:13px;
       background: transparent;
     }
     .no-results {
-      background: #f4f4f4;
+      background: darken($bk_color, 4);
       display: list-item;
     }
     .group-result {
       cursor: default;
-      color: #999;
+      color: darken($bk_color, 40);
       font-weight: bold;
     }
     .group-option {
@@ -98,7 +97,7 @@ $font-size:13px;
     }
   }
   .chzn-results-scroll {
-    background: white;
+    background:$bk_color;
     margin: 0 calc-em(4px);
     position: absolute;
     text-align: center;
@@ -126,21 +125,17 @@ $font-size:13px;
 /* @group Single Chosen */
 .chzn-container-single {
   .chzn-single {
-    background-color: #ffffff;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
-    background-image: -webkit-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
-    background-image: -moz-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
-    background-image: -o-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
-    background-image: linear-gradient(#ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
-    -webkit-border-radius: calc-em(5px);
-    -moz-border-radius   : calc-em(5px);
-    border-radius        : calc-em(5px);
-    -moz-background-clip   : padding;
-    -webkit-background-clip: padding-box;
-    background-clip        : padding-box;
-    border: calc-em(1px) solid #aaaaaa;
-    @include shadow(0 0 calc-em(3px) #ffffff inset, 0 calc-em(1px) calc-em(1px) rgba(0,0,0,0.1));
+    background-color: $bk_color;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$bk_color}', endColorstr='#{darken($bk_color, 7)}', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, $bk_color), color-stop(50%, darken($bk_color, 6)), color-stop(52%, darken($bk_color, 7)), color-stop(100%, darken($bk_color, 4)));
+    background-image: -webkit-linear-gradient(top, $bk_color 20%, darken($bk_color, 6) 50%, darken($bk_color, 7) 52%, darken($bk_color, 4) 100%);
+    background-image: -moz-linear-gradient(top, $bk_color 20%, darken($bk_color, 6) 50%, darken($bk_color, 7) 52%, darken($bk_color, 4) 100%);
+    background-image: -o-linear-gradient(top, $bk_color 20%, darken($bk_color, 6) 50%, darken($bk_color, 7) 52%, darken($bk_color, 4) 100%);
+    background-image: linear-gradient($bk_color 20%, darken($bk_color, 6) 50%, darken($bk_color, 7) 52%, darken($bk_color, 4) 100%);
+    border-radius: calc-em(5px);
+    background-clip: padding-box;
+    border: calc-em(1px) solid darken($bk_color, 33);
+    @include shadow(0 0 calc-em(3px) $bk_color inset, 0 calc-em(1px) calc-em(1px) rgba(0,0,0,0.1));
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -148,7 +143,7 @@ $font-size:13px;
     height: calc-em(23px);
     line-height: calc-em(24px);
     padding: 0 0 0 calc-em(8px);
-    color: #444444;
+    color: darken($bk_color, 73);
     text-decoration: none;
     span {
       margin-right: calc-em(26px);
@@ -156,7 +151,6 @@ $font-size:13px;
       overflow: hidden;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
       text-overflow: ellipsis;
     }
     abbr {
@@ -188,7 +182,7 @@ $font-size:13px;
     }
   }
   .chzn-default {
-    color: #999;
+    color: darken($bk_color, 40);
   }
   .chzn-container-single.chzn-disabled .chzn-single abbr:hover {
     background-position: -42px -10px;
@@ -201,26 +195,22 @@ $font-size:13px;
     z-index: 1010;
   }
   .chzn-search input {
-    background: #fff url('chosen-sprite.png') no-repeat 100% -20px;
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background: $bk_color url('chosen-sprite.png') no-repeat 100% -20px;
+    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
+    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat 100% -20px, linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
     margin: calc-em(1px) 0;
     padding: calc-em(4px) calc-em(20px) calc-em(4px) calc-em(5px);
     outline: 0;
-    border: calc-em(1px) solid #aaa;
+    border: calc-em(1px) solid darken($bk_color, 33);
     font-family: sans-serif;
     font-size: 1em;
   }
   .chzn-drop {
-    -webkit-border-radius: 0 0 calc-em(4px) calc-em(4px);
-    -moz-border-radius   : 0 0 calc-em(4px) calc-em(4px);
-    border-radius        : 0 0 calc-em(4px) calc-em(4px);
-    -moz-background-clip   : padding;
-    -webkit-background-clip: padding-box;
-    background-clip        : padding-box;
+    border-radius: 0 0 calc-em(4px) calc-em(4px);
+    background-clip: padding-box;
   }
   &.chzn-rtl {
     .chzn-single div b {
@@ -241,13 +231,13 @@ $font-size:13px;
 /* @group Multi Chosen */
 .chzn-container-multi {
   .chzn-choices {
-    background-color: #fff;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-    background-image: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background-image: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background-image: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
-    border: calc-em(1px) solid #aaa;
+    background-color: $bk_color;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
+    background-image: -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background-image: -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background-image: -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background-image: linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
+    border: calc-em(1px) solid darken($bk_color, 33);
     margin: 0;
     padding: 0;
     cursor: text;
@@ -264,7 +254,7 @@ $font-size:13px;
       margin: 0;
       padding: 0;
       input {
-        color: #666;
+        color: darken($bk_color, 60);
         background: transparent !important;
         border: 0 !important;
         font-family: sans-serif;
@@ -273,47 +263,28 @@ $font-size:13px;
         padding: calc-em(5px);
         margin: calc-em(1px) 0;
         outline: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow   : none;
-        box-shadow        : none;
+        @include shadow(none);
       }
       .default {
-        color: #999;
+        color: darken($bk_color, 40);
       }
     }
     .search-choice {
-      -webkit-border-radius: calc-em(3px);
-      -moz-border-radius   : calc-em(3px);
-      border-radius        : calc-em(3px);
-      -moz-background-clip   : padding;
-      -webkit-background-clip: padding-box;
-      background-clip        : padding-box;
-      background-color: #e4e4e4;
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 );
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
-      background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-      background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-      background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-      background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-      @include shadow(0 0 calc-em(2px) #ffffff inset, 0 calc-em(1px) 0 rgba(0,0,0,0.05));
-      color: #333;
-      border: calc-em(1px) solid #aaaaaa;
+      border-radius: calc-em(3px);
+      background-clip: padding-box;
+      @extend %grad_grey;
+      @include shadow(0 0 calc-em(2px) $bk_color inset, 0 calc-em(1px) 0 rgba(0,0,0,0.05));
+      color: darken($bk_color, 80);
+      border: calc-em(1px) solid darken($bk_color, 33);
       line-height: calc-em(13px);
       padding: calc-em(3px) calc-em(20px) calc-em(3px) calc-em(5px);
       margin: calc-em(3px) 0 calc-em(3px) calc-em(5px);
       position: relative;
       cursor: default;
       &.search-choice-disabled {
-        background-color: #e4e4e4;
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 );
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
-        background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-        background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-        background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-        background-image: -ms-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-        background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-        color: #666;
-        border: calc-em(1px) solid #cccccc;
+        @extend %grad_grey;
+        color: darken($bk_color, 60);
+        border: calc-em(1px) solid darken($bk_color, 20);
         padding-right: calc-em(5px);
       }
       .search-choice-close {
@@ -331,7 +302,7 @@ $font-size:13px;
       }
     }
     .search-choice-focus {
-      background: #d4d4d4;
+      background: darken($bk_color, 17);
       .search-choice-close {
         background-position: -42px -10px;
       }
@@ -355,19 +326,15 @@ $font-size:13px;
   @include shadow(0 0 calc-em(5px) rgba(0,0,0,.3));
   border: calc-em(1px) solid #5897fb;
   .chzn-single-with-drop {
-    border: calc-em(1px) solid #aaa;
-    @include shadow(0 calc-em(1px) 0 #fff inset);
-    background-color: #eee;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
-    background-image: -webkit-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
-    background-image: -moz-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
-    background-image: -o-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
-    background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
-    -webkit-border-bottom-left-radius : 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-radius-bottomleft : 0;
-    -moz-border-radius-bottomright: 0;
+    border: calc-em(1px) solid darken($bk_color, 33);
+    @include shadow(0 calc-em(1px) 0 $bk_color inset);
+    background-color: darken($bk_color, 7);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{darken($bk_color, 7)}', endColorstr='#{$bk_color}', GradientType=0 );
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, darken($bk_color, 7)), color-stop(80%, $bk_color));
+    background-image: -webkit-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background-image: -moz-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background-image: -o-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background-image: linear-gradient(darken($bk_color, 7) 20%, $bk_color 80%);
     border-bottom-left-radius : 0;
     border-bottom-right-radius: 0;
     div {
@@ -383,19 +350,15 @@ $font-size:13px;
     border: calc-em(1px) solid #5897fb;
   }
   .chzn-choices .search-field input {
-    color: #111 !important;
+    color: darken($bk_color, 93) !important;
   }
 }
 /* @end */
 
 /* @group Disabled Support */
 .chzn-disabled {
-  cursor: default;
   opacity:0.5 !important;
-  .chzn-single {
-    cursor: default;
-  }
-  .chzn-choices .search-choice .search-choice-close {
+  &, .chzn-single, .chzn-choices .search-choice .search-choice-close {
     cursor: default;
   }
 }
@@ -448,12 +411,12 @@ $font-size:13px;
     border-right: none;
   }
   .chzn-search input {
-    background: #fff url('chosen-sprite.png') no-repeat -30px -20px;
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+    background: $bk_color url('chosen-sprite.png') no-repeat -30px -20px;
+    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
+    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat -30px -20px, -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat -30px -20px, -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+    background: url('chosen-sprite.png') no-repeat -30px -20px, linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
     padding: calc-em(4px) calc-em(5px) calc-em(4px) calc-em(20px);
     direction: rtl;
   }
