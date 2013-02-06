@@ -52,8 +52,21 @@
 <body>
   <form>
   <div id="container">
-    <h1>Chosen</h1>
+    <h1>Chosen - The SASS Edition</h1>
     <p>Chosen is a JavaScript plugin for Prototype and jQuery that makes long, unwieldy select boxes much more user-friendly. For more information (including usage, explanation and faqs), check out the <a href="http://harvesthq.github.com/chosen/">online documentation</a>.</p>
+    <p>This version has been modified from the original to use <a href="http://sass-lang.com/">SASS</a> (version 3.2 and up) for generating the CSS and an icon font in place of the original sprite image.</p>
+    <h2>Advantages</h2>
+    <ul>
+      <li>Less code in the SASS SCSS file than in the original CSS</li>
+      <li>Resolution independence -- because icon fonts are used, the Chosen select boxes will be sharp at any magnification and on high-resolution displays.</li>
+      <li>Font sizes, width, padding, and colors can be quickly changed in the variables at the top of the SCSS file.</li>
+      <li>Easier to scale with media-queries for responsive sites. Only the variables for font size and width need to be adjusted and the rest of the layout will adapt.</li>
+    </ul>
+    <h2>Disadvantages</h2>
+    <ul>
+      <li>This layout is less compatible with older browsers as it uses pseudo elements and a custom icon font. If IE8 isn't an issue, you should be fine... or fall back to the plain select for IE8 using javascript.</li>
+      <li>Code is harder to understand and modify than the original due to SASS's nesting structure.</li>
+    </ul>
 
     <h2>Standard Select</h2>
     <div class="side-by-side clearfix">
