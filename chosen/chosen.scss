@@ -1,10 +1,10 @@
 /* Variables */
-$font-size:13px;
-$width:350px;
-$padding:0px;
-$bk_color:#ffffff;
-$hl_color:#3875d7;
-
+$font-size:   13px;
+$width:       350px;
+$padding:     2px;
+$bk_color:    #ffffff; /* Background color */
+$sel_color:    #3875d7; /* Highlight Color */
+$hl_color:   #feffde; /* Select Color */
 
 
 /* Functions */
@@ -22,8 +22,20 @@ $hl_color:#3875d7;
     box-shadow: $specs;
   }
 }
+/* Fonts */
+@font-face {
+  font-family: 'chzn-font';
+  src:url('chzn-font.eot');
+}
+@font-face {
+  font-family: 'chzn-font';
+  src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRk9UVE8AAAWsAAsAAAAACLgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAoUAAAPZ9v3Q9UZGVE0AAAOQAAAAGgAAABxmrBByR0RFRgAAA6wAAAAdAAAAIAAzAARPUy8yAAADzAAAAEsAAABgL93cQGNtYXAAAAQYAAAAPQAAAVLgGvLMaGVhZAAABFgAAAAuAAAANvuNrl9oaGVhAAAEiAAAAB4AAAAkBBD/52htdHgAAASoAAAAGAAAABgKAAEjbWF4cAAABMAAAAAGAAAABgAGUABuYW1lAAAEyAAAANgAAAGSLBTljHBvc3QAAAWgAAAADAAAACAAAwAAeJxVUl9IU2EUP992565jTRPdlt2mkxFRiJuT0CCDIF9FsjephyjKdBltD0ZvBqbfg6bzISHwoaeKEB8iC0NEhGI1exJJWyA1Qt9CvWJ5Oue7d4ovv+/c3/l9v/PnfgI0DYQQnuu3HiRqb95NJEE4QECzWe0ww04zqEmvU3q1kAeOXS5DKfcDr1t2mmNm0mXARIkBUGrAy6MG6Ibzaxm42UOHEvDDCYhALZxNJW5fikZj1lFvHXHraKCjJRqN7rdw0AuA6BePxYAYFBKK2NQhOhyfHOtOr9PvQ7E+0Iji/rOpCoSiyArDd4lQvP0FcSfXTN+ntnTEmbpKhIuZjIvZc4pF3NLrJX0veRSQqmvxJ+KdP28QE+d7EJ7MDbusfEEfZf23SEE/E48zNLgOWKlsuY1VJmt0hBEtgNi9myfYzhL4+5W+RsFhPbtSm5+Vtcsuu7NUzANlpaWyJoIRPUbwu9cCy7Wg97B+kfXV80xusuviL2VtqxjUnrKFCSOrvIFlP8LoGYeLNrvb8xyhdLavAvFG6w+E8ckwNb7XtoEgpmop0oIUVU4g/ltrR4DZPoQA77nq3VWEI2x6cnOOipxu26AGOmlMfMGzXuGfM2ZBlrmYlTjgSGIn6FospCyksrONVYlA3XEu+8huQITeFpp6Xa4a1bnpam4/x2MH0zRrvpumXmvn5RivmBwllZ9SBKO2ilNSyfhCl63amx/qQDF04SE9tRayhSbaCi5wgWmOpltz9ufCZPgwF2Zxjq+F9+/mLAPmqmjbqblhFC3XPtC2B+nxYbxphaN7CBl6tj4EFfc+Hafqqfd5RVP0sZGk9AJ90kxqf9Nm2u0z0+WyQno9/wFYHuBhAAAAeJxjYGBgZACCM7aLzoPos+ZmF2E0AEhTBpIAAHicY2BkYGDgA2IJBhBgYmAEQlYgZgHzGAAEgQA4AAAAeJxjYGZiYJzAwMrAwejDmMbAwOAOpb8ySDK0MDAwMbAyM8CBAILJEJDmmsLg8IDxAwPjg/8PGPQYHzAoNDAwMMIVKAAhIwAQYQwgAHicY2BgYGaAYBkGRgYQ8AHyGMF8FgYDIM0BhEwgiQcsHxj+/wezGCEsBQYBVqguMGBkY0DmjkgAANErCLUAAAB4nGNgZGBgAGIhzR/K8fw2Xxm4mRhA4Ky52UUE/f8BEwPjAyCXgwEsDQAJVgnnAAB4nGNgZGBgfPD/AYMeEwMDwz8GIAkUQQFsAG3qA/kAAAIAAAACAAAPAgAAAAIAAIoCAACKAAAAAAAAUAAABgAAeJyFjj1qw0AQhT9ZsolxqhBShi1SuJFYbXDjA4icwBcw8k8jgWwI6CCpfAjXPkYO4EP4BHmSBjeBZGGYb96+fbPAI19EdCdiyrPxiIS5ccwbn8aJPGfjMTO+jSfSb3JGyVTKU/+q4xEPvBrHfJAaJ/KcjMe8cDGeSL+yZkdLJfeGWv0I611bpZu6Et61YSxs7HrDlhJHIMOrL1W/wwZ9ISX05cl5V5DiirrZli5k3i3dfaV4kYY0+Fyuv/+20vqGA/v+zim4+wirsjns68rlmf8n4QfA6zyDeJxjYGbACwAAfQAE) format('woff'),
+     url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAANAIAAAwBQRkZUTWasEHIAAAZkAAAAHEdERUYANQAGAAAGRAAAACBPUy8yL7vcHwAAAVgAAABWY21hcOAc89MAAAHQAAABUmdhc3D//wADAAAGPAAAAAhnbHlm9hXVtQAAAzgAAAEUaGVhZPuNrl8AAADcAAAANmhoZWEEEP/pAAABFAAAACRobXR4CqoBKAAAAbAAAAAgbG9jYQEsAOAAAAMkAAAAEm1heHAATAAhAAABOAAAACBuYW1lLBTljAAABEwAAAGScG9zdBwfgkMAAAXgAAAAWgABAAAAAQAALyHSMF8PPPUACwIAAAAAAM03NtEAAAAAzTc20QAA/+ACAAHgAAAACAACAAAAAAAAAAEAAAHg/+AALgIAAAD+AAIAAAEAAAAAAAAAAAAAAAAAAAAIAAEAAAAIAB4AAgAAAAAAAgAAAAEAAQAAAEAAAAAAAAAAAQIAAZAABQAIAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAIABQMAAAAAAAAAAAAAEAAAAAAAAAAAAAAAUGZFZABA4AHwAAHg/+AALgHgACCAAAABAAAAAAAAAgAAAAAAAAAAqgAAAgAAFAIAAAACAACKAgAAigAAAAAAAAADAAAAAwAAABwAAQAAAAAATAADAAEAAAAcAAQAMAAAAAgACAACAAAAAOAE8AD//wAAAADgAfAA//8AACACEAcAAQAAAAAAAAAAAAABBgAAAQAAAAAAAAABAgAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgBkAHAAfACKAAAAAQAU//MB7AHNABsAAAEHFxYPAQYvAQcGLwEmPwEnJj8BNh8BNzYfARYB7JSUCwtDCwySkgwLQwsLkpILC0MLDJGTDAtDCwF0lJQLC0MLC5OTCwtDCwuTkgsMQgwMkZQLC0MLAAIAAP/kAfwB4AAVAB0AACUWDwEGLwEmJwYjIiY0NjIWFRQHFhcmIgYUFjI2NAH7CwsWCwuaAwEzPlBwcKBwJQMDbGpLS2pLEQsLFgsLmgMDJXCgcHBQPjMBA/VLaktLagAAAAABAIoAeQF2AUcAAgAAASMXAXbsdgFGzAABAIoAeQF2AUcAAgAANzMniux2eswAAAABAAD/4AIAAeAAAgAAEQEhAgD+AAHg/gAAAAAAAAAMAJYAAQAAAAAAAQAJABQAAQAAAAAAAgAEACgAAQAAAAAAAwAkAHcAAQAAAAAABAAJALAAAQAAAAAABQALANIAAQAAAAAABgAJAPIAAwABBAkAAQASAAAAAwABBAkAAgAIAB4AAwABBAkAAwBIAC0AAwABBAkABAASAJwAAwABBAkABQAWALoAAwABBAkABgASAN4AYwBoAHoAbgAtAGYAbwBuAHQAAGNoem4tZm9udAAAZgBvAG4AdAAAZm9udAAARgBvAG4AdABGAG8AcgBnAGUAIAAyAC4AMAAgADoAIABjAGgAegBuAC0AZgBvAG4AdAAgADoAIAA1AC0AMgAtADIAMAAxADMAAEZvbnRGb3JnZSAyLjAgOiBjaHpuLWZvbnQgOiA1LTItMjAxMwAAYwBoAHoAbgAtAGYAbwBuAHQAAGNoem4tZm9udAAAVgBlAHIAcwBpAG8AbgAgADEALgAwAABWZXJzaW9uIDEuMAAAYwBoAHoAbgAtAGYAbwBuAHQAAGNoem4tZm9udAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAIBAgEDAQQBBQEGB3VuaUUwMDEHdW5pRTAwMgd1bmlFMDAzB3VuaUUwMDQHdW5pRjAwMAAAAAAAAf//AAIAAQAAAA4AAAAYAAAAAAACAAEAAwAHAAEABAAAAAIAAAAAAAEAAAAAzD2izwAAAADNNzbRAAAAAM03NtE=) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Shared Classes */
-%grad_grey {
+%grad_1 {
   background-color:darken($bk_color, 11);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{darken($bk_color, 4)}', endColorstr='#{darken($bk_color, 7)}', GradientType=0 );
   background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, darken($bk_color, 4)), color-stop(50%, darken($bk_color, 6)), color-stop(52%, darken($bk_color, 9)), color-stop(100%, darken($bk_color, 7)));
@@ -32,6 +44,23 @@ $hl_color:#3875d7;
   background-image: -o-linear-gradient(top, darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
   background-image: linear-gradient(darken($bk_color, 4) 20%, darken($bk_color, 6) 50%, darken($bk_color, 9) 52%, darken($bk_color, 7) 100%);
 }
+%grad_2 {
+  background: $bk_color;
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
+  background: -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+  background: -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+  background: -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
+  background: linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
+}
+%chzn-icon {
+  font-family: 'chzn-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 
 /* @group Base */
@@ -63,7 +92,7 @@ $hl_color:#3875d7;
     -webkit-overflow-scrolling: touch;
     li {
       display: none;
-      line-height: calc-em(15px);
+      line-height:1.3;
       padding: calc-em(5px) calc-em(6px);
       margin: 0;
       list-style: none;
@@ -73,17 +102,17 @@ $hl_color:#3875d7;
       display: list-item;
     }
     .highlighted {
-      background-color: $hl_color;
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$hl_color}', endColorstr='#{adjust_hue(saturate(darken($hl_color, 3), 0), 4)}', GradientType=0 );
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, $hl_color), color-stop(90%, adjust_hue(saturate(darken($hl_color, 3), 0), 4)));
-      background-image: -webkit-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
-      background-image: -moz-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
-      background-image: -o-linear-gradient(top, $hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
-      background-image: linear-gradient($hl_color 20%, adjust_hue(saturate(darken($hl_color, 3), 0), 4) 90%);
+      background-color: $sel_color;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$sel_color}', endColorstr='#{adjust_hue(saturate(darken($sel_color, 3), 0), 4)}', GradientType=0 );
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, $sel_color), color-stop(90%, adjust_hue(saturate(darken($sel_color, 3), 0), 4)));
+      background-image: -webkit-linear-gradient(top, $sel_color 20%, adjust_hue(saturate(darken($sel_color, 3), 0), 4) 90%);
+      background-image: -moz-linear-gradient(top, $sel_color 20%, adjust_hue(saturate(darken($sel_color, 3), 0), 4) 90%);
+      background-image: -o-linear-gradient(top, $sel_color 20%, adjust_hue(saturate(darken($sel_color, 3), 0), 4) 90%);
+      background-image: linear-gradient($sel_color 20%, adjust_hue(saturate(darken($sel_color, 3), 0), 4) 90%);
       color: $bk_color;
     }
     li em {
-      background: #feffde;
+      background: $hl_color;
       font-style: normal;
     }
     .highlighted em {
@@ -116,15 +145,6 @@ $hl_color:#3875d7;
       width: calc-em(9px);
     }
   }
-  .chzn-results-scroll-down {
-    bottom: 0;
-    span {
-      background: url('chosen-sprite.png') no-repeat -4px -3px;
-    }
-  }
-  .chzn-results-scroll-up span {
-    background: url('chosen-sprite.png') no-repeat -22px -3px;
-  }
 }
 .chzn-select {
   width:$width !important;
@@ -149,8 +169,8 @@ $hl_color:#3875d7;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    height: calc-em(23px + $padding);
-    line-height: calc-em($font_size * 2);
+    height: calc-em($font_size * 1.3 + $padding);
+    line-height:1.5;
     padding: calc-em($padding) calc-em($padding) calc-em($padding) calc-em($padding + 8px);
     color: darken($bk_color, 73);
     text-decoration: none;
@@ -170,10 +190,6 @@ $hl_color:#3875d7;
       width: calc-em(12px);
       height: calc-em(12px);
       font-size: calc-em(1px);
-      background: url('chosen-sprite.png') -42px 1px no-repeat;
-      &:hover {
-        background-position: -42px -10px;
-      }
     }
     div {
       position: absolute;
@@ -181,20 +197,27 @@ $hl_color:#3875d7;
       top: 0;
       display: block;
       height: 100%;
-      width: calc-em(18px);
+      width:calc-em($font_size * 1.3);
       b {
-        background: url('chosen-sprite.png') no-repeat 0px 2px;
         display: block;
         width: 100%;
         height: 100%;
+        &:before {
+          position:relative;
+          @extend %chzn-icon;
+          content: "\e003";
+          color:darken($bk_color, 33);
+          font-size:calc-em($font_size);
+          top:calc-em(4px);
+        }
       }
     }
   }
+  .chzn-single-with-drop div b:before {
+    content: "\e004";
+  }
   .chzn-default {
     color: darken($bk_color, 40);
-  }
-  .chzn-container-single.chzn-disabled .chzn-single abbr:hover {
-    background-position: -42px -10px;
   }
   .chzn-search {
     padding: calc-em(3px) calc-em(4px);
@@ -202,32 +225,28 @@ $hl_color:#3875d7;
     margin: 0;
     white-space: nowrap;
     z-index: 1010;
-  }
-  .chzn-search input {
-    background: $bk_color url('chosen-sprite.png') no-repeat 100% -20px;
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat 100% -20px, linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
-    margin: calc-em(1px) 0;
-    padding: calc-em(4px) calc-em(20px) calc-em(4px) calc-em(5px);
-    outline: 0;
-    border: calc-em(1px) solid darken($bk_color, 33);
-    font-family: sans-serif;
-    font-size: 1em;
+    &:after {
+      position:absolute;
+      @extend %chzn-icon;
+      content: "\e002";
+      color:darken($bk_color, 33);
+      font-size:calc-em($font_size * 0.8 + 2px);
+      top:calc-em($font_size * 0.4 + 5px);
+      right:calc-em(12px);
+    }
+    input {
+      @extend %grad_2;
+      margin: calc-em(1px) 0;
+      padding: calc-em(4px) calc-em(20px) calc-em(4px) calc-em(5px);
+      outline: 0;
+      border: calc-em(1px) solid darken($bk_color, 33);
+      font-family: sans-serif;
+      font-size: 1em;
+    }
   }
   .chzn-drop {
     border-radius: 0 0 calc-em(4px) calc-em(4px);
     background-clip: padding-box;
-  }
-  &.chzn-rtl {
-    .chzn-single div b {
-      background-position: 6px 2px;
-    }
-    .chzn-single-with-drop div b {
-      background-position: -12px 2px;
-    }
   }
 }
 /* @end */
@@ -240,12 +259,7 @@ $hl_color:#3875d7;
 /* @group Multi Chosen */
 .chzn-container-multi {
   .chzn-choices {
-    background-color: $bk_color;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
-    background-image: -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background-image: -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background-image: -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background-image: linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
+    @extend %grad_2;
     border: calc-em(1px) solid darken($bk_color, 33);
     margin: 0;
     padding: 0;
@@ -268,8 +282,8 @@ $hl_color:#3875d7;
         border: 0 !important;
         font-family: sans-serif;
         font-size: 100%;
-        height: calc-em(15px);
-        padding: calc-em(5px);
+        height: calc-em($font_size * 1.3 + $padding);
+        padding: $padding;
         margin: calc-em(1px) 0;
         outline: 0;
         @include shadow(none);
@@ -281,17 +295,17 @@ $hl_color:#3875d7;
     .search-choice {
       border-radius: calc-em(3px);
       background-clip: padding-box;
-      @extend %grad_grey;
+      @extend %grad_1;
       @include shadow(0 0 calc-em(2px) $bk_color inset, 0 calc-em(1px) 0 rgba(0,0,0,0.05));
       color: darken($bk_color, 80);
       border: calc-em(1px) solid darken($bk_color, 33);
-      line-height: calc-em(13px);
-      padding: calc-em(3px) calc-em(20px) calc-em(3px) calc-em(5px);
+      line-height:1.3;
+      padding: calc-em($padding) calc-em($padding + $font_size * 1.3) calc-em($padding) calc-em($padding + $font_size * 0.25);
       margin: calc-em(3px) 0 calc-em(3px) calc-em(5px);
       position: relative;
       cursor: default;
       &.search-choice-disabled {
-        @extend %grad_grey;
+        @extend %grad_1;
         color: darken($bk_color, 60);
         border: calc-em(1px) solid darken($bk_color, 20);
         padding-right: calc-em(5px);
@@ -299,21 +313,20 @@ $hl_color:#3875d7;
       .search-choice-close {
         display: block;
         position: absolute;
-        right: 3px;
-        top: 4px;
-        width: 12px;
-        height: 12px;
-        font-size: 1px;
-        background: url('chosen-sprite.png') -42px 1px no-repeat;
-        &:hover {
-          background-position: -42px -10px;
+        right:calc-em($font_size - 15px);
+        top:calc-em(1px);
+        width:calc-em(12px);
+        height:calc-em(12px);
+        text-decoration:none;
+        &:after {
+          @extend %chzn-icon;
+          content: "\e001";
+          font-size:calc-em($font_size * 0.5);
+          color:darken($bk_color, 60);
         }
-      }
-    }
-    .search-choice-focus {
-      background: darken($bk_color, 17);
-      .search-choice-close {
-        background-position: -42px -10px;
+        &:hover:after {
+          color:darken($bk_color, 80);
+        }
       }
     }
   }
@@ -333,30 +346,27 @@ $hl_color:#3875d7;
 /* @group Active  */
 .chzn-container-active .chzn-single {
   @include shadow(0 0 calc-em(5px) rgba(0,0,0,.3));
-  border: calc-em(1px) solid saturate(lighten($hl_color, 7), 1);
+  border: calc-em(1px) solid saturate(lighten($sel_color, 7), 1);
   .chzn-single-with-drop {
     border: calc-em(1px) solid darken($bk_color, 33);
     @include shadow(0 calc-em(1px) 0 $bk_color inset);
-    background-color: darken($bk_color, 7);
+    background: darken($bk_color, 7);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{darken($bk_color, 7)}', endColorstr='#{$bk_color}', GradientType=0 );
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, darken($bk_color, 7)), color-stop(80%, $bk_color));
-    background-image: -webkit-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
-    background-image: -moz-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
-    background-image: -o-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
-    background-image: linear-gradient(darken($bk_color, 7) 20%, $bk_color 80%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, darken($bk_color, 7)), color-stop(80%, $bk_color));
+    background: -webkit-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background: -moz-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background: -o-linear-gradient(top, darken($bk_color, 7) 20%, $bk_color 80%);
+    background: linear-gradient(darken($bk_color, 7) 20%, $bk_color 80%);
     border-bottom-left-radius : 0;
     border-bottom-right-radius: 0;
     div {
       background: transparent;
       border-left: none;
-      b {
-        background-position: -18px 2px;
-      }
     }
   }
   .chzn-choices {
     @include shadow(0 0 calc-em(5px) rgba(0,0,0,.3));
-    border: calc-em(1px) solid saturate(lighten($hl_color, 7), 1);
+    border: calc-em(1px) solid saturate(lighten($sel_color, 7), 1);
   }
   .chzn-choices .search-field input {
     color: darken($bk_color, 93) !important;
@@ -400,11 +410,11 @@ $hl_color:#3875d7;
       float: right;
     }
     .search-choice {
-      padding: calc-em(3px) calc-em(5px) calc-em(3px) calc-em(19px);
+      padding: calc-em($padding) calc-em($padding + $font_size * 0.25) calc-em($padding) calc-em($padding + $font_size * 1.3);
       margin: calc-em(3px) calc-em(5px) calc-em(3px) 0;
       .search-choice-close {
-        left: 4px;
         right: auto;
+        left:calc-em($font_size - 15px);
       }
     }
   }
@@ -419,25 +429,16 @@ $hl_color:#3875d7;
   &.chzn-container-active .chzn-single-with-drop div {
     border-right: none;
   }
-  .chzn-search input {
-    background: $bk_color url('chosen-sprite.png') no-repeat -30px -20px;
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, darken($bk_color, 7)), color-stop(15%, $bk_color));
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -webkit-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -moz-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, -o-linear-gradient(top, darken($bk_color, 7) 1%, $bk_color 15%);
-    background: url('chosen-sprite.png') no-repeat -30px -20px, linear-gradient(darken($bk_color, 7) 1%, $bk_color 15%);
-    padding: calc-em(4px) calc-em(5px) calc-em(4px) calc-em(20px);
-    direction: rtl;
-  }
-}
-/* @end */
-
-/* @group Retina compatibility */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi)  {
-  .chzn-rtl .chzn-search input, .chzn-container-single .chzn-single abbr, .chzn-container-single .chzn-single div b, .chzn-container-single .chzn-search input, .chzn-container-multi .chzn-choices .search-choice .search-choice-close, .chzn-container .chzn-results-scroll-down span, .chzn-container .chzn-results-scroll-up span {
-      background-image: url('chosen-sprite@2x.png') !important;
-      background-repeat: no-repeat !important;
-      background-size: 52px 37px !important;
+  .chzn-search {
+    input {
+      @extend %grad_2;
+      padding: calc-em(4px) calc-em(5px) calc-em(4px) calc-em(20px);
+      direction: rtl;
+    }
+    &:after {
+      right:auto;
+      left:calc-em(12px);
+    }
   }
 }
 /* @end */
